@@ -1,0 +1,17 @@
+<!-- <a href="{{ .Permalink }}">
+	<img src='{{ .Params.featured_image }}'/>
+	<h3> {{ .Title }} </h3>
+	<p> {{ .Params.roles }} </p>
+	<p> View Project </p>
+</a> -->
+
+<a href="{{ .Permalink }}" class="carouselImage" style="background:url('{{ .Params.featured_image }}'); background-size:cover; background-repeat: no-repeat; background-position: center;">
+	
+	<div class="slider-info">
+		<h2> {{ .Title }} </h2>
+		<p> {{ .Params.roles }} </p>
+		<span> View Project </span>
+	</div>
+</a>
+
+

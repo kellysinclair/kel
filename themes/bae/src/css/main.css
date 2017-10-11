@@ -1,0 +1,9 @@
+@import '_normies';
+@import '_variables';
+@import '_hugo-internal-templates';
+@import '_styles';
+@import '_header';
+@import '_banners';
+@import '_slider';
+@import '_gallery';
+@import '_footer';

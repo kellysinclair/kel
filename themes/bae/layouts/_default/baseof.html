@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <meta charset="utf-8">
+  {{ partial "title" . }}
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="{{ .Site.Params.AuthorName }}">
+  <meta name="description" content="{{ .Description }}">
+  <link rel="canonical" href="{{ .Permalink }}">
+  <link rel="icon" href='{{ "images/logo.png" | absURL }}' type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Serif" rel="stylesheet" type='text/css'>
+  <link href='{{ "dist/main.css" | absURL }}' rel='stylesheet' type="text/css"/>
+  <script type="text/javascript" src='{{ "dist/app.bundle.js" | absURL }}'></script>
+  <body>
+  
+    {{ block "header" . }}
+      {{ partial "header.html" .}}
+    {{ end }}
+    <!-- Code that all your templates share, like a header -->
+    
+    {{ block "main" . }}
+      <!-- The part of the page that begins to differ between templates -->
+    {{ end }}
+
+    {{ block "footer" . }}
+      {{ partial "footer.html" .}}
+    {{ end }}
+    
+  </body>
+</html>

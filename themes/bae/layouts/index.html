@@ -1,0 +1,28 @@
+{{ define "main" }}
+
+<main aria-role="main">
+  <div class="banner">
+    <h1 class="text-container">Hey, I’m Kelly. A Web Designer from Hamilton, New Zealand.</h1>
+    <a href="#work">
+        <button class="btn"> my work </button>
+    </a>
+  </div>
+<section id="work">
+  <div class="carouselOfImages" data-flickity='{ "imagesLoaded": true, "percentPosition": false, "wrapAround": true, "initialIndex": 1, "draggable": false, "watchCSS": true }'>
+  {{ range first (index .Site.Params "HomepagePosts" | default 3) (where .Data.Pages "Type" "post") }}
+    {{ .Render "list-item-expanded" }}
+  {{ end }}
+</div>
+</section>
+<div class="about">
+    <div class="about-text">
+      <h1>About Me</h1> 
+      <p>I’m a designer that’s passionate about designing experiences that are a fit for end user, and therefore create value for the client. In my spare time I’m always creating, whether it’s baking bread in the kitchen, or sketching at my desk. I enjoy the outdoors; hiking, running, and especially visiting the family farm. Oh and I also keep a <a href="https://kellyrosesinclair.tumblr.com" target="_blank">blog</a> of ramblings.</p>      
+      <p>Want to talk?</p>
+      <a class="hover" href="mailto:kellyrosesinclair@gmail.com">kellyrosesinclair@gmail.com</a>
+    </div>
+</div>
+<div class="pattern">
+</div>
+</main>
+{{ end }}

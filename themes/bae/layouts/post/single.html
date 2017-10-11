@@ -1,0 +1,51 @@
+{{ define "main" }}
+<main aria-role="main" class="{{ .Params.color }}">
+	<div class="project-banner">
+	  <h1 class="text-container">{{ .Title }}</h1>
+	  <br>
+	  <p class="text-container"> {{ .Description }} </p>
+	</div>
+<section>
+	<article>
+		<img src='{{ .Params.featured_image }}'/>
+		<h1 class="text-container">Approach</h1>
+		<br>
+    	<div class="text-container">
+    	{{ .Content }} 
+    	</div>
+ 	</article>
+ 	<div class="gallery-container">
+ 		<div class="grid">
+ 			<img src= '{{ .Params.img_one }}'> 
+ 			<img src= '{{ .Params.img_two }}'> 
+ 			<img src= '{{ .Params.img_three }}'> 
+ 		</div>
+ 	</div>
+ 	<div class="link-container {{ .Params.textColor }}">
+
+	 	<a class="project-links hover" href="https://{{ .Params.siteURL }}" target="_blank">
+	 		<h3>Launch Project</h3>
+	 		<p>
+			{{ .Params.siteURL }}
+			</p>
+	 	</a>
+
+
+ 		{{ if .NextInSection }}
+	 		<a class="project-links hover" href="{{.NextInSection.Permalink}}">
+	 			<h3 >Next Project</h3>
+				<p> {{ .NextInSection.Title }}</p> 
+			</a>
+		{{ else }}
+			{{ $all := ($.Site.GetPage "section" .Section).Pages.ByPublishDate.Reverse }}
+			{{ range first 1 $all }}
+				<a class="project-links hover" href="{{ .Permalink }}">
+		 			<h3 >Next Project</h3>
+					<p >{{ .Title }}</p>
+				</a>
+			{{ end }}
+		{{ end }}
+	</div>
+</section>
+</main>
+{{ end }}
