@@ -3,12 +3,12 @@
 <main aria-role="main">
   <div class="banner">
     <h1 class="text-container">Hey, I’m Kelly. A Web Designer from Hamilton, New Zealand.</h1>
-    <a href="#work">
+    <a href="#myWork">
         <button class="btn"> my work </button>
     </a>
   </div>
 <section id="work">
-  <div class="carouselOfImages" data-flickity='{ "imagesLoaded": true, "percentPosition": false, "wrapAround": true, "initialIndex": 1, "draggable": false, "watchCSS": true }'>
+  <div id="myWork" class="carouselOfImages" data-flickity='{ "imagesLoaded": true, "percentPosition": false, "wrapAround": true, "initialIndex": 1, "draggable": false, "watchCSS": true }'>
   {{ range first (index .Site.Params "HomepagePosts" | default 3) (where .Data.Pages "Type" "post") }}
     {{ .Render "list-item-expanded" }}
   {{ end }}
