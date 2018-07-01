@@ -1,6 +1,6 @@
 ---
 date: 2017-06-09T10:58:08-04:00
-tags: [""]
+tags: ["cool"]
 title: "Reach"
 color: "reach-color"
 textColor: "reach-text-color"

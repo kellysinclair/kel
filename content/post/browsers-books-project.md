@@ -1,6 +1,6 @@
 ---
 date: 2017-05-09T10:58:08-04:00
-tags: [""]
+tags: ["website", "cool"]
 title: "Browsers Books"
 color: "browsers-color"
 textColor: "browsers-text-color"

@@ -1,0 +1,16 @@
+.work {
+  
+}
+
+.work-container {
+  background-color: white;
+  box-shadow: 0 0 4px 4px hsla(0, 0%, 0%, .50);
+  max-width: 993px;
+  margin: -180px auto 0;
+}
+
+.my-work-filters {
+  & button {
+    color: var(--font-color);
+  }
+}

@@ -23,13 +23,20 @@
  	</div>
  	<div class="link-container {{ .Params.textColor }}">
 
-	 	<a class="project-links hover" href="https://{{ .Params.siteURL }}" target="_blank">
-	 		<h3>Launch Project</h3>
-	 		<p>
-			{{ .Params.siteURL }}
-			</p>
-	 	</a>
-
+	 		{{ if .PrevInSection }}
+	 			<a class="project-links hover" href="{{.PrevInSection.Permalink}}">
+	 				<h3 >Previous Project</h3>
+					<p> {{ .PrevInSection.Title }}</p> 
+				</a>
+			{{ else }}
+				{{ $all := ($.Site.GetPage "section" .Section).Pages.ByPublishDate.Reverse }}
+				{{ range first 1 $all }}
+					<a class="project-links hover" href="{{ .Permalink }}">
+		 				<h3 >Previous Project</h3>
+						<p >{{ .Title }}</p>
+					</a>
+				{{ end }}
+		{{ end }}
 
  		{{ if .NextInSection }}
 	 		<a class="project-links hover" href="{{.NextInSection.Permalink}}">
@@ -37,7 +44,7 @@
 				<p> {{ .NextInSection.Title }}</p> 
 			</a>
 		{{ else }}
-			{{ $all := ($.Site.GetPage "section" .Section).Pages.ByPublishDate.Reverse }}
+			{{ $all := ($.Site.GetPage "section" .Section).Pages.ByPublishDate }}
 			{{ range first 1 $all }}
 				<a class="project-links hover" href="{{ .Permalink }}">
 		 			<h3 >Next Project</h3>

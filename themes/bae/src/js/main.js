@@ -1,9 +1,18 @@
 import styles from './../css/main.css';
+import Isotope from 'isotope-layout';
 var $ = require('jquery/src/jquery');
 
-import Flickity from 'flickity';
-
 $( document ).ready(function() {
+
+  var iso = new Isotope( '.my-work', {
+    itemSelector: '.grid-item',
+    layoutMode: 'fitRows'
+  });
+
+  $('.filter-button').on( 'click', function() {
+    var filterValue = $( this ).attr('data-filter');
+    iso.arrange({ filter: filterValue });
+  });
 
 	$('.grid img:nth-child(n + 2)').click(function() {
     var thmb = this; 
@@ -27,22 +36,3 @@ $( document ).ready(function() {
 	    });
 	});
 });
-
-// let flickity = new Flickity('.slider', {
-// 	initialIndex: 2,
-// 	wrapAround: true,
-// });
-
-// NOTE: TO use Jquery, just call the modules you want
-// var $ = require('jquery/src/core');
-// require('jquery/src/core/init');
-// require('jquery/src/manipulation');
-
-// OR, use all of them
-// var $ = require('jquery/src/jquery');
-
-// And write your code
-// $('body').append('<p>Jquery is working</p>');
-//
-// You can also "require" any script from its location in the node modules folder. Webpack often knows what to look for, but you can add a script directly like this:
-// var javascriptthingy = require('name/folder/file.js');

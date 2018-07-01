@@ -27,6 +27,7 @@
     "webpack": "^2.3.3"
   },
   "dependencies": {
-    "flickity": "^2.0.9"
+    "flickity": "^2.0.9",
+    "isotope-layout": "^3.0.6"
   }
 }

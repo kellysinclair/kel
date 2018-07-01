@@ -7,12 +7,15 @@
         <button class="btn"> my work </button>
     </a>
   </div>
-<section id="work">
-  <div id="myWork" class="carouselOfImages" data-flickity='{ "imagesLoaded": true, "percentPosition": false, "wrapAround": true, "initialIndex": 1, "draggable": false, "watchCSS": true }'>
-  {{ range first (index .Site.Params "HomepagePosts" | default 3) (where .Data.Pages "Type" "post") }}
-    {{ .Render "list-item-expanded" }}
-  {{ end }}
-</div>
+<section id="work" class="work">
+  <div class="work-container">
+    <div class="my-work-filters">{{ range $name, $taxonomy := .Site.Taxonomies.tags }} <button class="filter-button" data-filter=".{{$name}}">{{$name}}</button> {{ end }}</div>
+    <div id="myWork" class="my-work">
+    {{ range first (index .Site.Params "HomepagePosts" | default 3) (where .Data.Pages "Type" "post") }}
+      {{ .Render "list-item-expanded" }}
+    {{ end }}
+    </div>
+  </div>
 </section>
 <div class="about">
     <div class="about-text">
