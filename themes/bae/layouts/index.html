@@ -2,25 +2,31 @@
 
 <main aria-role="main">
   <div class="banner">
-    <h1 class="text-container">Hey, I’m Kelly. A Web Designer from Hamilton, New Zealand.</h1>
+    <h1 class="text-container">Hey, I’m Kelly. <br>A Web Designer passionate about User Experience.</h1>
+    <br>
     <a href="#myWork">
         <button class="btn"> my work </button>
     </a>
   </div>
 <section id="work" class="work">
-  <div class="work-container">
-    <div class="my-work-filters">{{ range $name, $taxonomy := .Site.Taxonomies.tags }} <button class="filter-button" data-filter=".{{$name}}">{{$name}}</button> {{ end }}</div>
-    <div id="myWork" class="my-work">
-    {{ range first (index .Site.Params "HomepagePosts" | default 3) (where .Data.Pages "Type" "post") }}
+  <div id="myWork" class="work-container">
+    <div class="my-work-filters">
+      <button class="filter-button" data-filter=".all">All</button>
+      {{ range $name, $taxonomy := .Site.Taxonomies.tags }} <button class="filter-button" data-filter=".{{$name}}">{{$name}}</button> {{ end }}</div>
+    <div class="my-work"> 
+
+    {{ range (where .Data.Pages "Type" "post") }}
       {{ .Render "list-item-expanded" }}
     {{ end }}
+   
     </div>
+
   </div>
 </section>
 <div class="about">
     <div class="about-text">
       <h1>About Me</h1> 
-      <p>I’m a designer that’s passionate about designing experiences that are a fit for the end user, and therefore create value for the client. In my spare time I’m always creating, whether it’s baking bread in the kitchen, or sketching at my desk. I enjoy the outdoors; hiking, running, and especially visiting the family farm. Oh and I also keep a <a href="https://kellyrosesinclair.tumblr.com" target="_blank">blog</a> of ramblings.</p>      
+      <p>I’m a designer that’s passionate about designing experiences that are a fit for the end user, and therefore create value for the client. In my spare time I’m always creating, whether it’s baking bread in the kitchen, or sketching at my desk. I enjoy the outdoors; hiking, running, and especially visiting the family farm.</p>      
       <p>Want to talk?</p>
       <a class="hover" href="mailto:kellyrosesinclair@gmail.com">kellyrosesinclair@gmail.com</a>
     </div>

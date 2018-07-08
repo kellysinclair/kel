@@ -16,6 +16,61 @@ main {
   padding-top: 60px;
 }
 
+.zines-color {
+background-image: linear-gradient(120deg, #014DBE 1%, #0378FF 97%);
+}
+
+.zines-text-color {
+  color: #056ADF;
+  & p {
+    color: #056ADF;
+  }
+}
+
+.nzdia-color {
+background-image: linear-gradient(120deg, #1A643E 1%, #358964 97%);
+}
+
+.nzdia-text-color {
+  color: #1A643E;
+  & p {
+    color: #1A643E;
+  }
+}
+
+.mhf-color {
+  background-image: linear-gradient(120deg, #5C466C 1%, #8662B4 97%);
+}
+
+.mhf-text-color {
+  color: #5C466C;
+  & p {
+    color: #5C466C;
+  }
+}
+
+.zoo-color {
+  background-image: linear-gradient(120deg, #3D4C34 1%, #5F7253 97%);
+}
+
+.zoo-text-color {
+  color: #3D4C34;
+  & p {
+    color: #3D4C34;
+  }
+}
+
+.busit-color {
+  background-image:linear-gradient(120deg, #323D48 1%, #607489 97%);
+}
+
+.busit-text-color {
+  color: #323D48;
+  & p {
+    color: #323D48;
+  }
+}
+
 .reach-color {
   background-image: linear-gradient(120deg, #5E9786 1%, #80C8B2 97%);
 }
@@ -73,6 +128,11 @@ font-size: 0.75rem;
 color: #7D7D7D;
 letter-spacing: 1px;
 text-transform: uppercase;
+}
+
+.project-banner h3{
+ color: white;
+ text-align: center;
 }
 
 a {
@@ -152,6 +212,14 @@ section {
   margin: 0;
   }
 }
+
+.launch-button {
+    margin: 10px auto;
+    padding: 20px;
+    display: block;
+    text-align: center;
+    font-size: 1.5rem;
+  }
 
 .project-links:nth-child(1) {
   margin-right: 20px;

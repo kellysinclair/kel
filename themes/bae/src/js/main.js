@@ -1,17 +1,24 @@
 import styles from './../css/main.css';
-import Isotope from 'isotope-layout';
 var $ = require('jquery/src/jquery');
 
 $( document ).ready(function() {
 
-  var iso = new Isotope( '.my-work', {
-    itemSelector: '.grid-item',
-    layoutMode: 'fitRows'
+  const filterButtons = $('.filter-button');
+
+  filterButtons.on( 'click', function() {
+    const button = $(this)
+    const filterValue = button.attr('data-filter');
+    filterButtons.removeClass('is-active')
+    button.addClass('is-active')
+    $(`.grid-item:not(${filterValue})`).hide();
+    $(`.grid-item${filterValue}`).fadeIn();
   });
 
-  $('.filter-button').on( 'click', function() {
-    var filterValue = $( this ).attr('data-filter');
-    iso.arrange({ filter: filterValue });
+
+  $(".filter-button").hover(function(){
+  $(this).css("opacity", "0.8");
+        }, function(){
+        $(this).css("opacity", "1");
   });
 
 	$('.grid img:nth-child(n + 2)').click(function() {

@@ -3,6 +3,8 @@
 	<div class="project-banner">
 	  <h1 class="text-container">{{ .Title }}</h1>
 	  <br>
+	  <h3 class="text-container">{{ .Params.roles }}</h3>
+	  <br>
 	  <p class="text-container"> {{ .Description }} </p>
 	</div>
 <section>
@@ -12,6 +14,13 @@
 		<br>
     	<div class="text-container">
     	{{ .Content }} 
+
+    	{{ if .Params.siteURL }}
+    	<a class="launch-button hover {{ .Params.textColor }}" href=" http://{{ .Params.siteURL }}" target="blank">
+    		
+    		 {{ .Params.siteURL }}
+    	</a>
+    	{{ end}}
     	</div>
  	</article>
  	<div class="gallery-container">
@@ -23,10 +32,10 @@
  	</div>
  	<div class="link-container {{ .Params.textColor }}">
 
-	 		{{ if .PrevInSection }}
-	 			<a class="project-links hover" href="{{.PrevInSection.Permalink}}">
+	 		{{ if .NextInSection }}
+	 			<a class="project-links hover" href="{{.NextInSection.Permalink}}">
 	 				<h3 >Previous Project</h3>
-					<p> {{ .PrevInSection.Title }}</p> 
+					<p> {{ .NextInSection.Title }}</p> 
 				</a>
 			{{ else }}
 				{{ $all := ($.Site.GetPage "section" .Section).Pages.ByPublishDate.Reverse }}
@@ -38,10 +47,10 @@
 				{{ end }}
 		{{ end }}
 
- 		{{ if .NextInSection }}
-	 		<a class="project-links hover" href="{{.NextInSection.Permalink}}">
+ 		{{ if .PrevInSection }}
+	 		<a class="project-links hover" href="{{.PrevInSection.Permalink}}">
 	 			<h3 >Next Project</h3>
-				<p> {{ .NextInSection.Title }}</p> 
+				<p> {{ .PrevInSection.Title }}</p> 
 			</a>
 		{{ else }}
 			{{ $all := ($.Site.GetPage "section" .Section).Pages.ByPublishDate }}
@@ -50,6 +59,7 @@
 		 			<h3 >Next Project</h3>
 					<p >{{ .Title }}</p>
 				</a>
+	
 			{{ end }}
 		{{ end }}
 	</div>

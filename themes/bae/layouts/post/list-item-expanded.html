@@ -1,17 +1,10 @@
-<!-- <a href="{{ .Permalink }}">
-	<img src='{{ .Params.featured_image }}'/>
-	<h3> {{ .Title }} </h3>
-	<p> {{ .Params.roles }} </p>
-	<p> View Project </p>
-</a> -->
 
 <a href="{{ .Permalink }}"
- class="carouselImage grid-item {{ range .Params.tags }} {{.}} {{ end }}" style="background:url('{{ .Params.featured_image }}'); background-size:cover; background-repeat: no-repeat; background-position: center;">
-	<div class="slider-info">
-		<h2> {{ .Title }} </h2>
+ class="overlay blue work-tile grid-item all {{ range .Params.tags }} {{.}} {{ end }}">
+<img src='{{ .Params.tile_image }}'>
+	<div class="tile-content">
+		<h1> {{ .Title }} </h1>
 		<p> {{ .Params.roles }} </p>
-		<span> View Project </span>
+		<h3> View Project </h3>
 	</div>
 </a>
-
-
