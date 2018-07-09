@@ -29,7 +29,7 @@
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-gap: 4px 3px;
-	transition: all 1s;
+	transition: all 500ms;
 
 }
 
@@ -70,7 +70,7 @@
 
 .overlay:hover:after  {
   opacity: 0.9;
-  transition: all .5s;
+  transition: all .2s;
 }
 
 .tile-content{

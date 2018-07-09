@@ -149,7 +149,14 @@ a.hover:hover {
   transition: opacity 0.3s ease;
 }
 
-p {
+p{
+  font-family: 'Noto Serif';
+  font-size: 1em;
+  line-height: 1.75;
+  color: #424242;
+}
+
+ul {
   font-family: 'Noto Serif';
   font-size: 1em;
   line-height: 1.75;

@@ -12,7 +12,11 @@
   <div id="myWork" class="work-container">
     <div class="my-work-filters">
       <button class="filter-button" data-filter=".all">All</button>
-      {{ range $name, $taxonomy := .Site.Taxonomies.tags }} <button class="filter-button" data-filter=".{{$name}}">{{$name}}</button> {{ end }}</div>
+      <button class="filter-button" data-filter=".ux">UX</button>
+      <button class="filter-button" data-filter=".websites">Websites</button>
+      <button class="filter-button" data-filter=".branding">Branding</button>
+      <button class="filter-button" data-filter=".other">Other</button>
+    </div>
     <div class="my-work"> 
 
     {{ range (where .Data.Pages "Type" "post") }}

@@ -2,40 +2,87 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Kel</title>
-    <link>http://example.org/post/</link>
+    <link>https://kel-staging.netlify.com/post/</link>
     <description>Recent content in Posts on Kel</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 09 Jun 2017 10:58:08 -0400</lastBuildDate>
+    <lastBuildDate>Mon, 11 Dec 2017 10:58:08 -0400</lastBuildDate>
     
-	<atom:link href="http://example.org/post/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://kel-staging.netlify.com/post/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Reach</title>
-      <link>http://example.org/post/reach-project/</link>
-      <pubDate>Fri, 09 Jun 2017 10:58:08 -0400</pubDate>
+      <title>BusIt</title>
+      <link>https://kel-staging.netlify.com/post/busit/</link>
+      <pubDate>Mon, 11 Dec 2017 10:58:08 -0400</pubDate>
       
-      <guid>http://example.org/post/reach-project/</guid>
-      <description>My role in this project was to; develop User Interviews questions and assist the Client in conducting interviews, create personas and scenarios, create website wireframes, develop the visual style direction, and design posters. Through user research we discovered that the users needed a website that was clear, simple, and made it easy for them to find information and get the assistance they need. This was done with a simple site structure with well defined sections and calls to action.</description>
+      <guid>https://kel-staging.netlify.com/post/busit/</guid>
+      <description>We found out that BusIt had an idea of their user groups, but not what each one would need, and want, to make their transit experience easy. We decided that the best way to engage with users was for me to get on the bus and talk to them. Through doing this we learnt about all the small things that different people experience when taking a bus. Such as visually impaired people having to use the sound of the bus to wave it down, and count the stops to know when to get off.</description>
     </item>
     
     <item>
-      <title>Browsers Books</title>
-      <link>http://example.org/post/browsers-books-project/</link>
-      <pubDate>Tue, 09 May 2017 10:58:08 -0400</pubDate>
+      <title>Hamilton Zoo</title>
+      <link>https://kel-staging.netlify.com/post/hamiltonzoo/</link>
+      <pubDate>Mon, 13 Nov 2017 10:58:08 -0400</pubDate>
       
-      <guid>http://example.org/post/browsers-books-project/</guid>
-      <description>After close collaboration with Browsers Books, we chose to incorporate hand drawn elements, textures, and fantastic imagery in their website design. The textures and drawings help to give the feel of old books, as well as matching with their rustic new store interior. The font pairing was chosen to maintain the book feel, while still having clear and easy to read content.</description>
+      <guid>https://kel-staging.netlify.com/post/hamiltonzoo/</guid>
+      <description>We took a user centered approach to the redesign of the website. My role in project was to conduct user interviews, create personas, produce wireframes, and complete user testing. We found that there were a few key things that users needed to know when planning a trip to the zoo. Those being:
+ Zoo events Opening hours Ticket prices Location Weather conditions  We used a home page banner to show off what’s on at the zoo.</description>
+    </item>
+    
+    <item>
+      <title>Mental Health Foundation</title>
+      <link>https://kel-staging.netlify.com/post/mental-health-foundation/</link>
+      <pubDate>Fri, 15 Sep 2017 10:58:08 -0400</pubDate>
+      
+      <guid>https://kel-staging.netlify.com/post/mental-health-foundation/</guid>
+      <description>I was tasked with interviewing users, creating personas, and scenarios. I then provided my findings in an expert report to the Mental Health Foundation. Throughout this process I discovered that users were different than expected. The inital assumption was that people in a managerial role would be using the Workplace Wellbeing information, but in reality it was the Health and Safety roles. We also found a problem with the overall Information Architecture of the website.</description>
+    </item>
+    
+    <item>
+      <title>Reach</title>
+      <link>https://kel-staging.netlify.com/post/reach-project/</link>
+      <pubDate>Sun, 16 Jul 2017 10:58:08 -0400</pubDate>
+      
+      <guid>https://kel-staging.netlify.com/post/reach-project/</guid>
+      <description>My role in this project was to:
+ Develop user interview questions Assist the Client in conducting interviews Create personas and scenarios Create website wireframes Develop the visual style direction Design posters  Through user research we discovered that the users needed a website that made it easy for them to find information and get the help they need. This was achieved with a simple site structure with well defined sections and calls to action.</description>
     </item>
     
     <item>
       <title>Wynter</title>
-      <link>http://example.org/post/wynter-project/</link>
-      <pubDate>Sun, 09 Apr 2017 10:58:08 -0500</pubDate>
+      <link>https://kel-staging.netlify.com/post/wynter-project/</link>
+      <pubDate>Sat, 17 Jun 2017 10:58:08 -0500</pubDate>
       
-      <guid>http://example.org/post/wynter-project/</guid>
-      <description>With this site I made sure to keep a clean an open design look, as this gives a professional, and trustworthy feel. To make sure that it didn’t lack character, the typography and elements from the brand were included throughout the design. These brand elements can be seen in the buttons, subtle background images, and content area shapes.</description>
+      <guid>https://kel-staging.netlify.com/post/wynter-project/</guid>
+      <description>With this site I made sure to keep a clean and open design look, as this gives a professional, and trustworthy feel. To make sure that it didn’t lack character, the typography and elements from the brand were included throughout the design. These brand elements can be seen in the buttons, subtle background images, and the shape of content areas.</description>
+    </item>
+    
+    <item>
+      <title>Dairy Industry Awards</title>
+      <link>https://kel-staging.netlify.com/post/dairyindustryawards/</link>
+      <pubDate>Fri, 12 May 2017 10:58:08 -0400</pubDate>
+      
+      <guid>https://kel-staging.netlify.com/post/dairyindustryawards/</guid>
+      <description>We spoke to past winners of the competitions to understand what the awards mean to them. The key themes of these discussions were that it is about the dairy cow, striving for continuous improvement, and the kiwi farming community. To represent these themes we used a cow contained in a circle shape, paired with a strong font reminiscent of old farm and small town signs. The text ‘Dairy Industry Awards’ is swapped out with the competition in question when required, and the device and text portions can be separated and used alone.</description>
+    </item>
+    
+    <item>
+      <title>Zines</title>
+      <link>https://kel-staging.netlify.com/post/zines/</link>
+      <pubDate>Sun, 30 Apr 2017 10:58:08 -0400</pubDate>
+      
+      <guid>https://kel-staging.netlify.com/post/zines/</guid>
+      <description>I like to make things that people can relate to, but also mean something to me. Two of my zines are focused on mental wellbeing, as I believe that speaking out about Mental Illness is important, especially if we want to remove the stigma around it. I drew elements of the zine separately, scanned them, and then created the layout and a printable file.</description>
+    </item>
+    
+    <item>
+      <title>Browsers Books</title>
+      <link>https://kel-staging.netlify.com/post/browsers-books-project/</link>
+      <pubDate>Tue, 10 Jan 2017 10:58:08 -0400</pubDate>
+      
+      <guid>https://kel-staging.netlify.com/post/browsers-books-project/</guid>
+      <description>They needed a site that met their unique book shop experience and complimented their new look space. After close collaboration with Browsers Books, we chose to incorporate hand drawn elements, textures, and fantastic imagery in their website design. The textures and drawings help to give the feel of old books, as well as matching with their rustic new store interior. The font pairing was chosen to maintain the book feel, while still having clear and easy to read content.</description>
     </item>
     
   </channel>
