@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Other on Kel</title>
+    <link>https://kel-staging.netlify.com/tags/other/</link>
+    <description>Recent content in Other on Kel</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 30 Apr 2017 10:58:08 -0400</lastBuildDate>
+    
+	<atom:link href="https://kel-staging.netlify.com/tags/other/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Zines</title>
+      <link>https://kel-staging.netlify.com/post/zines/</link>
+      <pubDate>Sun, 30 Apr 2017 10:58:08 -0400</pubDate>
+      
+      <guid>https://kel-staging.netlify.com/post/zines/</guid>
+      <description>I like to make things that people can relate to, but also mean something to me. Two of my zines are focused on mental wellbeing, as I believe that speaking out about Mental Illness is important, especially if we want to remove the stigma around it. I drew elements of the zine separately, scanned them, and then created the layout and a printable file.</description>
+    </item>
+    
+  </channel>
+</rss>
