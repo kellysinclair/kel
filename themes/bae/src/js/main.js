@@ -1,9 +1,25 @@
 import styles from './../css/main.css';
 var $ = require('jquery/src/jquery');
 
-import Flickity from 'flickity';
-
 $( document ).ready(function() {
+
+  const filterButtons = $('.filter-button');
+
+  filterButtons.on( 'click', function() {
+    const button = $(this)
+    const filterValue = button.attr('data-filter');
+    filterButtons.removeClass('is-active')
+    button.addClass('is-active')
+    $(`.grid-item:not(${filterValue})`).hide();
+    $(`.grid-item${filterValue}`).fadeIn();
+  });
+
+
+  $(".filter-button").hover(function(){
+  $(this).css("opacity", "0.8");
+        }, function(){
+        $(this).css("opacity", "1");
+  });
 
 	$('.grid img:nth-child(n + 2)').click(function() {
     var thmb = this; 
@@ -27,22 +43,3 @@ $( document ).ready(function() {
 	    });
 	});
 });
-
-// let flickity = new Flickity('.slider', {
-// 	initialIndex: 2,
-// 	wrapAround: true,
-// });
-
-// NOTE: TO use Jquery, just call the modules you want
-// var $ = require('jquery/src/core');
-// require('jquery/src/core/init');
-// require('jquery/src/manipulation');
-
-// OR, use all of them
-// var $ = require('jquery/src/jquery');
-
-// And write your code
-// $('body').append('<p>Jquery is working</p>');
-//
-// You can also "require" any script from its location in the node modules folder. Webpack often knows what to look for, but you can add a script directly like this:
-// var javascriptthingy = require('name/folder/file.js');

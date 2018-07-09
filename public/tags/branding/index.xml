@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Branding on Kel</title>
+    <link>https://kel-staging.netlify.com/tags/branding/</link>
+    <description>Recent content in Branding on Kel</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 12 May 2017 10:58:08 -0400</lastBuildDate>
+    
+	<atom:link href="https://kel-staging.netlify.com/tags/branding/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Dairy Industry Awards</title>
+      <link>https://kel-staging.netlify.com/post/dairyindustryawards/</link>
+      <pubDate>Fri, 12 May 2017 10:58:08 -0400</pubDate>
+      
+      <guid>https://kel-staging.netlify.com/post/dairyindustryawards/</guid>
+      <description>We spoke to past winners of the competitions to understand what the awards mean to them. The key themes of these discussions were that it is about the dairy cow, striving for continuous improvement, and the kiwi farming community. To represent these themes we used a cow contained in a circle shape, paired with a strong font reminiscent of old farm and small town signs. The text ‘Dairy Industry Awards’ is swapped out with the competition in question when required, and the device and text portions can be separated and used alone.</description>
+    </item>
+    
+  </channel>
+</rss>
