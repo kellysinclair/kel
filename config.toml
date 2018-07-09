@@ -1,4 +1,4 @@
-baseURL = "https://kel-staging.netlify.com/"
+baseURL = "https://kel.nz/"
 languageCode = "en-us"
 title = "Kel"
 theme = "bae"
