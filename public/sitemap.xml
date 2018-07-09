@@ -3,45 +3,88 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://example.org/post/reach-project/</loc>
-    <lastmod>2017-06-09T10:58:08-04:00</lastmod>
+    <loc>https://kel-staging.netlify.com/post/busit/</loc>
+    <lastmod>2017-12-11T10:58:08-04:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/post/browsers-books-project/</loc>
-    <lastmod>2017-05-09T10:58:08-04:00</lastmod>
+    <loc>https://kel-staging.netlify.com/post/hamiltonzoo/</loc>
+    <lastmod>2017-11-13T10:58:08-04:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/post/wynter-project/</loc>
-    <lastmod>2017-04-09T10:58:08-05:00</lastmod>
+    <loc>https://kel-staging.netlify.com/post/mental-health-foundation/</loc>
+    <lastmod>2017-09-15T10:58:08-04:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/tags/</loc>
-    <lastmod>2017-06-09T10:58:08-04:00</lastmod>
+    <loc>https://kel-staging.netlify.com/post/reach-project/</loc>
+    <lastmod>2017-07-16T10:58:08-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kel-staging.netlify.com/post/wynter-project/</loc>
+    <lastmod>2017-06-17T10:58:08-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kel-staging.netlify.com/post/dairyindustryawards/</loc>
+    <lastmod>2017-05-12T10:58:08-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kel-staging.netlify.com/post/zines/</loc>
+    <lastmod>2017-04-30T10:58:08-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kel-staging.netlify.com/post/browsers-books-project/</loc>
+    <lastmod>2017-01-10T10:58:08-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kel-staging.netlify.com/tags/branding/</loc>
+    <lastmod>2017-05-12T10:58:08-04:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://example.org/categories/</loc>
+    <loc>https://kel-staging.netlify.com/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://example.org/</loc>
-    <lastmod>2017-06-09T10:58:08-04:00</lastmod>
+    <loc>https://kel-staging.netlify.com/</loc>
+    <lastmod>2017-12-11T10:58:08-04:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/post/</loc>
-    <lastmod>2017-06-09T10:58:08-04:00</lastmod>
+    <loc>https://kel-staging.netlify.com/tags/other/</loc>
+    <lastmod>2017-04-30T10:58:08-04:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://example.org/tags/</loc>
-    <lastmod>2017-06-09T10:58:08-04:00</lastmod>
+    <loc>https://kel-staging.netlify.com/post/</loc>
+    <lastmod>2017-12-11T10:58:08-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://kel-staging.netlify.com/tags/</loc>
+    <lastmod>2017-05-12T10:58:08-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://kel-staging.netlify.com/tags/ux/</loc>
+    <lastmod>2017-12-11T10:58:08-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://kel-staging.netlify.com/tags/websites/</loc>
+    <lastmod>2017-12-11T10:58:08-04:00</lastmod>
     <priority>0</priority>
   </url>
   
